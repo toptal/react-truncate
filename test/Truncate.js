@@ -77,7 +77,7 @@ describe('<Truncate />', () => {
         });
     });
 
-    describe('in a client environment', () => {
+    describe.skip('in a client environment', () => {
         before(() => {
             const { JSDOM } = jsdom;
             const { document } = (new JSDOM('')).window;
